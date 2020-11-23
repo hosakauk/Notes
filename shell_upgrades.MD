@@ -1,4 +1,5 @@
 #### Python
+-----
 ```echo os.system("/bin/bash")```
 
 ```python -c 'import pty; pty.spawn("/bin/bash")'```
