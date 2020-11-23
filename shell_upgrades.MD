@@ -3,8 +3,6 @@
 
 ```python -c 'import pty; pty.spawn("/bin/bash")'```
 
-```Then: ctrl+z (to background), stty raw -echo, fg (enter)```
-
 
 ###### perl
 ```perl -e 'exec "/bin/sh";'```
@@ -23,3 +21,36 @@
 ###### sh
 ```/bin/sh -i```
 
+
+###### Vi
+```:!bash```
+
+```:set shell=/bin/bash:shell```
+
+
+###### nmap
+```!sh```
+
+
+###### nano
+```ctrl+r ctrl+x /bin/bash```
+
+
+###### stty (fixed)
+*In reverse shell:*
+
+```python -c 'import pty;pty.spawn("/bin/bash")'```
+
+*ctrl+z (to background)*
+
+*In base OS:*
+
+```stty raw -echo```
+
+```reset```
+
+```export SHELL=bash```
+
+```export TERM=xterm-256color```
+
+```stty rows <num> columns <cols>```
