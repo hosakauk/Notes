@@ -10,7 +10,7 @@
 *Note: -d or --data is the same as --data-ascii (this will also strip line breaks), sending binary data requires --data-binary and to URL encode the value of a form field use --data-urlencode*
 
 
-#### POST JSON Data File
+#### POST JSON data file
 -----
 ```curl -X POST -d "@file.json" http://www.example.com/form-api.php```
 
