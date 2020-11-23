@@ -1,42 +1,42 @@
-##### Python
+#### Python
 ```echo os.system("/bin/bash")```
 
 ```python -c 'import pty; pty.spawn("/bin/bash")'```
 
 
-##### Perl
+#### Perl
 ```perl -e 'exec "/bin/sh";'```
 
 ```exec "/bin/sh"```
 
 
-##### Ruby
+#### Ruby
 ```exec "/bin/sh"```
 
 
-##### LUA
+#### LUA
 ```os.execute("/bin/sh")```
 
 
-##### sh
+#### sh
 ```/bin/sh -i```
 
 
-##### Vi
+#### Vi
 ```:!bash```
 
 ```:set shell=/bin/bash:shell```
 
 
-##### nmap
+#### nmap
 ```!sh```
 
 
-##### nano
+#### nano
 ```ctrl+r ctrl+x /bin/bash```
 
 
-##### stty (fixed)
+#### stty (fixed)
 *In reverse shell:*
 
 ```python -c 'import pty;pty.spawn("/bin/bash")'```
@@ -56,7 +56,7 @@
 ```stty rows <num> columns <cols>```
 
 
-##### expect
+#### expect
 *cat sh.exp*
 
 ```#!/usr/bin/expect```
