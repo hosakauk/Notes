@@ -6,6 +6,7 @@
 #### POST JSON Data
 -----
 ```curl -X POST -H 'Content-Type: application/json' -d '{"username":"admin","password":"default"}' http://www.example.com/login.php```
+
 *Note: -d or --data is the same as --data-ascii (this will also strip line breaks), sending binary data requires --data-binary and to URL encode the value of a form field use --data-urlencode*
 
 
