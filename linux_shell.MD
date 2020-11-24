@@ -59,4 +59,35 @@
 ```find / . -xdev -user root -perm -a+w```
 
 
+#### sys/user info
+-----
+```uname -a, env, whoami, history, pwd```
+
+
+#### who else has logged in?
+-----
+```who, w, last```
+
+
+#### are you in sudoers?
+-----
+```sudo -l```
+
+```cat /etc/sudoers```
+
+
+#### other super users?
+-----
+```grep -v -E "^#" /etc/passwd | awk -F: '$3 == 0 { print $1 }'```
+
+
+#### network info
+-----
+```ifconfig -a```
+
+```netstat -antup```
+
+```lsof -i```
+
+
 
