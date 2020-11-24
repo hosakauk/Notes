@@ -201,3 +201,49 @@ Get-ADComputer -Filter {OperatingSystem -like '*Windows 7*'} -SearchBase "ou=Org
 -----
 
 
+#### get user details from active directory
+
+```
+Get-ADUser -Identity some.person -Server SERV.DOMAIN.WHEREVER ` -Properties AccountLockoutTime,LastBadPasswordAttempt,BadPwdCount,LockedOut,BadPasswordTime,LastLogonDate
+```
+
+```
+Get-ADUser -Identity some.person -Server SERV.DOMAIN.WHEREVER ` -Properties *
+```
+
+-----
+
+
+#### get local administrators of remote computer
+
+```
+function get-localadmins{
+ [cmdletbinding()]
+ Param(
+ [string]$computerName
+ )
+ $group = get-wmiobject win32_group -ComputerName $computerName -Filter "LocalAccount=True AND SID='S-1-5-32-544'"
+ $query = "GroupComponent = `"Win32_Group.Domain='$($group.domain)'`,Name='$($group.name)'`""
+ $list = Get-WmiObject win32_groupuser -ComputerName $computerName -Filter $query
+ $list | %{$_.PartComponent} | % {$_.substring($_.lastindexof("Domain=") + 7).replace("`",Name=`"","\")}
+}
+
+$Workstation = Read-Host "Computer Name"
+get-localadmins $Workstation
+```
+
+-----
+
+
+#### change ownership of files in directory
+
+```
+$files = Get-ChildItem $PWD
+foreach ($f in $files){
+	TAKEOWN /F $f /A
+	icacls $f /grant Administrators:F /t}
+```
+
+-----
+
+

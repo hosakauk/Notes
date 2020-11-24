@@ -100,6 +100,52 @@ icacls "C:\Program Files (x86)\*" 2>nul | findstr "(F)" | findstr "BUILTIN\Users
 -----
 
 
+#### reboot remote machine
 
+```
+shutdown /m \\DEV /r /t 1
+```
+
+-----
+
+
+#### query remote desktop sessions
+
+```
+qwinsta /server:remote.host
+```
+
+```
+query session /server:dev
+```
+
+-----
+
+
+#### remote desktop, control session, no consent prompt
+
+```
+mstsc /v:DEV /shadow:2 /noConsentPrompt /control
+```
+
+-----
+
+
+#### run notepad in logged in session ID 2
+
+```
+PsExec.exe -i 2 \\REMOTEMACHINE notepad
+```
+
+-----
+
+
+#### run chrome browser, navigate to youtube in logged in session ID 2
+
+```
+psexec \\dev -i 2 "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" "https://www.youtube.com"
+```
+
+-----
 
 
