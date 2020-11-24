@@ -52,5 +52,33 @@
 -----
 
 
+#### set breakpoint on all imported functions in myapp.exe that contain "mem"
+
+```
+!mona bf -t ADD -f import -s *mem* -m myapp.exe
+```
+
+-----
+
+
+#### set breakpoint on given address if the address is read
+
+```
+!mona bp -a 0x0012C431 -t READ
+```
+
+-----
+
+
+#### set breakpoint on given address if the address is written to
+
+```
+!mona bp -a 0x0012C431 -t WRITE
+```
+
+-----
+
+
+
 
 
