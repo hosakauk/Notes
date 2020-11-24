@@ -116,7 +116,16 @@ qwinsta /server:remote.host
 ```
 
 ```
-query session /server:dev
+query session /server:remote.host
+```
+
+-----
+
+
+#### kill session ID 2
+
+```
+rwinsta /server:remote.host 2
 ```
 
 -----
