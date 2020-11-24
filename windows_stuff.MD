@@ -80,4 +80,26 @@
 -----
 
 
+#### show files and folders in "Program Files" with (F)ull permissions set for "Everyone"
+
+```
+icacls "C:\Program Files\*" 2>nul | findstr "(F)" | findstr "Everyone"
+icacls "C:\Program Files (x86)\*" 2>nul | findstr "(F)" | findstr "Everyone"
+```
+
+-----
+
+
+#### show files and folders in "Program Files" with (F)ull permissions set for "BUILTIN\Users"
+
+```
+icacls "C:\Program Files\*" 2>nul | findstr "(F)" | findstr "BUILTIN\Users"
+icacls "C:\Program Files (x86)\*" 2>nul | findstr "(F)" | findstr "BUILTIN\Users" 
+```
+
+-----
+
+
+
+
 
