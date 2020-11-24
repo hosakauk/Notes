@@ -43,3 +43,14 @@
 -----
 
 
+#### find ROP gadgets
+
+```
+!mona rop -m *.dll -cp nonull
+```
+
+-----
+
+
+
+
