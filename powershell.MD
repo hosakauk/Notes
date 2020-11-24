@@ -7,6 +7,7 @@ $pass = ConvertTo-SecureString -AsPlainText $password -Force
 $cred = New-Object System.Management.Automation.PSCredential -ArgumentList $username,$pass
 Invoke-Command -Credential $cred -ScriptBlock {net localgroup Administrators bob /add}
 ```
+
 -----
 
 
@@ -15,6 +16,7 @@ Invoke-Command -Credential $cred -ScriptBlock {net localgroup Administrators bob
 ```
 powershell -ExecutionPolicy ByPass -File C:\example.ps1
 ```
+
 -----
 
 
@@ -27,6 +29,7 @@ $pass = ConvertTo-SecureString -AsPlainText $password -Force
 $cred = New-Object System.Management.Automation.PSCredential -ArgumentList $username,$pass
 Start-Process cmd.exe -Credential $cred
 ```
+
 -----
 
 
@@ -36,5 +39,6 @@ Start-Process cmd.exe -Credential $cred
 cat somefile.ps1 | iconv -t UTF-16LE | base64 -w0 
 powershell -enc <pastebase64here>
 ```
+
 -----
 

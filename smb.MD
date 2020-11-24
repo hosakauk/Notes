@@ -15,6 +15,7 @@
 *start remote desktop*
 
 ```net start TermService```
+
 -----
 
 
@@ -27,6 +28,7 @@
 ```impacket-wmiexec -hashes :somehashhere someone@target.lab```
 
 ```metasploit module "auxiliary/smb_login"```
+
 -----
 
 
@@ -39,6 +41,7 @@
 *enumerate everything*
 
 ```enum4linux -a x.x.x.x```
+
 -----
 
 
@@ -51,6 +54,7 @@
 *interact with share*
 
 ```smbclient \\\\somewhere\\public -U <username>```
+
 -----
 
 
@@ -65,6 +69,7 @@
 ```mount -t smbfs -o username=<username> \\\\x.x.x.x\\c$ /mnt/example```
 
 ```smbmount \\\\x.x.x.x\\c$ /mnt/example -o username=<username>```
+
 -----
 
 
