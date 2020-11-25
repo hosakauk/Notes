@@ -13,7 +13,9 @@
 
 | syntax | type |
 |:---:|:---:|
-|```'foo'||'bar'```|*oracle, postgresql*|
+|```
+'foo'||'bar'
+```|*oracle, postgresql*|
 |```'foo'+'bar'```|*microsoft*|
 |```'foo' 'bar'```|*mysql*|
 |```CONCAT('foo','bar')```|*mysql*|
