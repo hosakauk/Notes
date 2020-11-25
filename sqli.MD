@@ -21,4 +21,11 @@
 -----
 
 
-####
+#### version
+
+| syntax | type |
+|:---:|:---:|
+|```SELECT version FROM v$instance```|*oracle*|
+|```SELECT banner from v$instance```|*oracle*|
+|```SELECT @@version```|*microsoft, mysql*|
+|```SELECT version()```|*postgresql*|
