@@ -1,3 +1,6 @@
+## Web
+-----
+
 #### SQL Injection
 
 ```https://owasp.org/www-chapter-belgium/assets/2010/2010-06-16/Advanced_SQL_InjectionV2.pdf```
@@ -31,4 +34,31 @@
 -----
 
 
-####
+#### OS Command Injection
+
+```https://www.owasp.org/index.php/Command_Injection```
+```https://www.hackingarticles.in/comprehensive-guide-on-os-command-injection/```
+```https://medium.com/bugbountywriteup/command-injection-poc-72cc3743f10d```
+
+-----
+
+
+#### Session Fixation
+
+```https://www.owasp.org/index.php/Session_fixation```
+```http://projects.webappsec.org/w/page/13246960/Session%20Fixation```
+
+-----
+
+
+## Directory
+-----
+
+#### LDAP Injection
+
+```http://projects.webappsec.org/w/page/13246947/LDAP%20Injection```
+
+-----
+
+
+#### 
