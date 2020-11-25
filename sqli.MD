@@ -29,3 +29,15 @@
 |```SELECT banner from v$instance```|*oracle*|
 |```SELECT @@version```|*microsoft, mysql*|
 |```SELECT version()```|*postgresql*|
+
+-----
+
+
+#### database contents
+
+| syntax | type |
+|:---:|:---:|
+|```SELECT * FROM all_tables```|*oracle*|
+|```SELECT * FROM all_tab_columns WHERE table_name = 'TABLE-NAME-HERE'```|*oracle*|
+|```SELECT * FROM information_schema.tables```|*microsoft, postgresql, mysql*|
+|```SELECT * FROM information_schema.columns WHERE table_name = 'TABLE-NAME-HERE'```|*microsoft, postgresql, mysql*|
