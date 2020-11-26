@@ -81,6 +81,13 @@
 -----
 
 
+#### word writeable executable bit set
+
+```find / \( -perm -o w -perm -o x \) -type d 2>/dev/null```
+
+-----
+
+
 #### sys/user info
 
 ```uname -a, env, whoami, history, pwd```
@@ -120,5 +127,19 @@
 ```lsof -i```
 
 -----
+
+
+#### get version
+
+```cat /proc/version```
+
+```cat /etc/issue```
+
+```cat /etc/lsb-release```
+
+```hostnamectl```
+
+-----
+
 
 

