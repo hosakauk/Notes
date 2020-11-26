@@ -211,6 +211,27 @@ Get-ADUser -Identity some.person -Server SERV.DOMAIN.WHEREVER ` -Properties Acco
 Get-ADUser -Identity some.person -Server SERV.DOMAIN.WHEREVER ` -Properties *
 ```
 
+```
+Get-NetUser -Username student1
+```
+
+```
+Get-NetUser | select -ExpandProperty samaccountname
+```
+
+-----
+
+
+#### find shares on hosts in current domain
+
+```
+Invoke-ShareFinder -Verbose
+```
+
+```
+Invoke-ShareFinder -ExcludeStandard -ExcludePrint -ExcludeIPC -Verbose
+```
+
 -----
 
 
@@ -246,4 +267,15 @@ foreach ($f in $files){
 
 -----
 
+
+#### get list of GPO in current domain
+
+```
+Get-NetGPO
+Get-NetGPO -ComputerName DC01.enumme.local
+Get-GPO -All (GroupPolicy module)
+Get-GPResultantSetOfPolicy -ReportType Html -Path C:\Users\Administrator\report.html (Provides RSoP)
+```
+
+-----
 
