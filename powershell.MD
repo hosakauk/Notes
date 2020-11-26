@@ -222,19 +222,6 @@ Get-NetUser | select -ExpandProperty samaccountname
 -----
 
 
-#### find shares on hosts in current domain
-
-```
-Invoke-ShareFinder -Verbose
-```
-
-```
-Invoke-ShareFinder -ExcludeStandard -ExcludePrint -ExcludeIPC -Verbose
-```
-
------
-
-
 #### get local administrators of remote computer
 
 ```
