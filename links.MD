@@ -13,6 +13,8 @@
 
 ```https://perspectiverisk.com/mysql-sql-injection-practical-cheat-sheet/```
 
+```https://www.netsparker.com/blog/web-security/sql-injection-cheat-sheet/```
+
 -----
 
 
@@ -141,6 +143,8 @@
 ```http://0xc0ffee.io/blog/OSCP-Goldmine```
 
 ```https://niiconsulting.com/checkmate/2017/06/a-detail-guide-on-oscp-preparation-from-newbie-to-oscp/```
+
+```https://github.com/codingo/OSCP-2```
 
 -----
 
