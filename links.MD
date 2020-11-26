@@ -9,6 +9,10 @@
 
 ```https://sqlzoo.net/```
 
+```https://pentest.tonyng.net/sql-injection-cheat-sheet/```
+
+```https://perspectiverisk.com/mysql-sql-injection-practical-cheat-sheet/```
+
 -----
 
 
