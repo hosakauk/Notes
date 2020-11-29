@@ -80,6 +80,8 @@
 
 ```stty rows <num> columns <cols>```
 
+```fg```
+
 -----
 
 
