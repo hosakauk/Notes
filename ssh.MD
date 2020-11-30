@@ -1,10 +1,10 @@
 #### port forward
 
-* local port forward *
+*local port forward*
 
 ```ssh -L 8443:127.0.0.1:8443 user@remote.host```
 
-* remote port forward *
+*remote port forward*
 
 ```ssh -R 5901:127.0.0.1:5901 user@remote.host```
 
