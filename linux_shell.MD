@@ -1,3 +1,10 @@
+#### grep all files in /var for "DB_PASSWORD"
+
+```grep -rnw '/var' -e 'DB_PASSWORD'```
+
+-----
+
+
 #### find directories owned by "apache"
 
 ```find / . -type d -user apache 2>&1 | grep -v "Permission denied"```
