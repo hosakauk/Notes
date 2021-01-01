@@ -24,6 +24,10 @@
 
 -----
 
+```Invoke-WebRequest -Uri "http://www.contoso.com" -OutFile "C:\path\file"```
+
+-----
+
 
 #### netcat
 
