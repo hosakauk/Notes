@@ -45,3 +45,34 @@
 
 -----
 
+## snmp
+-----
+#### snmp v1 query
+
+```snmpwalk -v1 -c [Community string] [IP address of the host] [OID of the system information MIB]```
+
+-----
+
+#### snmp v2 query
+
+```snmpwalk -v2c -c -c [Community string] [IP address of host] [OID of system information MIB]```
+
+-----
+
+#### snmp v3 query auth no encryption
+
+```snmpwalk -v3 -l authNoPriv -u [User name] -a MD5 -A [User password] [IP address of host] [OID of system information MIB]```
+
+-----
+
+#### snmp v3 query auth and encryption
+
+```snmpwalk -v3 -l authPriv -u [User name] -a MD5 -A [User password] -x DES -X [DES password] [IP address of host] [OID of system information MIB]```
+
+-----
+
+#### snmp v3 no auth no encryption
+
+```snmpwalk -v3 -l noAuthNoPriv -u [User name] [IP address of the host] [OID of the system information MIB]```
+
+-----
