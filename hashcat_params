@@ -1,0 +1,3 @@
+sudo hashcat -m 13100 hashinput.txt SecLists-master/Passwords/Leaked-Databases/rockyou.txt -r OneRuleToRuleThemAll.rule -o cracked.txt -O -w 3
+
+powershell .\hashcat.exe -m 13100 hashinput.txt rockyou.txt -r OneRuleToRuleThemAll.rule -o cracked.txt -O -w 3
