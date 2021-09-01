@@ -150,7 +150,7 @@
 
 ```uname --all```
 
-``uname -rms```
+```uname -rms```
 
 ```cat /etc/redhat-release```
 
