@@ -146,6 +146,16 @@
 
 ```hostnamectl```
 
+```lsb_release -a```
+
+```uname --all```
+
+``uname -rms```
+
+```cat /etc/redhat-release```
+
+```cat /etc/*-release```
+
 -----
 
 
