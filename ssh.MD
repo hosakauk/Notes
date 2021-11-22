@@ -21,6 +21,12 @@
 
 -----
 
+*Joining Tunnels Together*
+
+```Machine A: ssh -D 5555 user@machineB -p5555```
+```Machine B: ssh user@machineB -D 5555```
+```Machine C: ssh user@machineB -L 5555:localhost:5555```
+
 
 #### SCP transfers
 
