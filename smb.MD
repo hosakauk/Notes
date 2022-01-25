@@ -77,6 +77,8 @@
   
 *nfs mount after rpc enum*
   
+```showmount -e 10.10.79.161```
+  
 ```mount -t nfs 10.10.79.161:/home ~/tmp/mount -nolock```
 
 
