@@ -71,6 +71,13 @@
 ```smbmount \\\\x.x.x.x\\c$ /mnt/example -o username=<username>```
 
 -----
+  
+  
+#### nfs
+  
+*nfs mount after rpc enum*
+  
+```mount -t nfs 10.10.79.161:/home ~/tmp/mount -nolock```
 
 
 
