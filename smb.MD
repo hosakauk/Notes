@@ -80,6 +80,8 @@
 ```showmount -e 10.10.79.161```
   
 ```mount -t nfs 10.10.79.161:/home ~/tmp/mount -nolock```
+  
+```nmap -p 111 --script=nfs-ls,nfs-statfs,nfs-showmount 10.10.85.128```
 
 
 
